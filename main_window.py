@@ -20,7 +20,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_17 = QtWidgets.QLabel(parent=self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_17.sizePolicy().hasHeightForWidth())
@@ -31,7 +33,9 @@ class Ui_MainWindow(object):
         self.label_17.setObjectName("label_17")
         self.horizontalLayout.addWidget(self.label_17)
         self.units_combo = QtWidgets.QComboBox(parent=self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.units_combo.sizePolicy().hasHeightForWidth())
@@ -43,7 +47,9 @@ class Ui_MainWindow(object):
         self.units_combo.setObjectName("units_combo")
         self.horizontalLayout.addWidget(self.units_combo)
         self.unit_create = QtWidgets.QPushButton(parent=self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.unit_create.sizePolicy().hasHeightForWidth())
@@ -74,7 +80,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.users_total.setFont(font)
-        self.users_total.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.users_total.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.users_total.setObjectName("users_total")
         self.gridLayout.addWidget(self.users_total, 0, 1, 1, 1)
         self.label_2 = QtWidgets.QLabel(parent=self.groupBox)
@@ -87,7 +97,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.radio_users.setFont(font)
-        self.radio_users.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.radio_users.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.radio_users.setObjectName("radio_users")
         self.gridLayout.addWidget(self.radio_users, 1, 1, 1, 1)
         self.verticalLayout_2.addLayout(self.gridLayout)
@@ -124,7 +138,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.nets_total.setFont(font)
-        self.nets_total.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.nets_total.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.nets_total.setObjectName("nets_total")
         self.gridLayout_2.addWidget(self.nets_total, 0, 1, 1, 1)
         self.label_6 = QtWidgets.QLabel(parent=self.groupBox_2)
@@ -137,7 +155,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.nets_configured.setFont(font)
-        self.nets_configured.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.nets_configured.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.nets_configured.setObjectName("nets_configured")
         self.gridLayout_2.addWidget(self.nets_configured, 1, 1, 1, 1)
         self.verticalLayout_3.addLayout(self.gridLayout_2)
@@ -168,7 +190,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.devs_total_configured.setFont(font)
-        self.devs_total_configured.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.devs_total_configured.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.devs_total_configured.setObjectName("devs_total_configured")
         self.gridLayout_3.addWidget(self.devs_total_configured, 0, 1, 1, 1)
         self.label_11 = QtWidgets.QLabel(parent=self.groupBox_3)
@@ -181,7 +207,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.devs_4400.setFont(font)
-        self.devs_4400.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.devs_4400.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.devs_4400.setObjectName("devs_4400")
         self.gridLayout_3.addWidget(self.devs_4400, 1, 1, 1, 1)
         self.label_13 = QtWidgets.QLabel(parent=self.groupBox_3)
@@ -194,7 +224,11 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.devs_4800.setFont(font)
-        self.devs_4800.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.devs_4800.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.devs_4800.setObjectName("devs_4800")
         self.gridLayout_3.addWidget(self.devs_4800, 2, 1, 1, 1)
         self.label_15 = QtWidgets.QLabel(parent=self.groupBox_3)
@@ -204,7 +238,10 @@ class Ui_MainWindow(object):
         self.label_15.setObjectName("label_15")
         self.gridLayout_3.addWidget(self.label_15, 3, 0, 1, 1)
         self.devs_4600 = QtWidgets.QLabel(parent=self.groupBox_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.Preferred,
+            QtWidgets.QSizePolicy.Policy.Preferred,
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.devs_4600.sizePolicy().hasHeightForWidth())
@@ -212,15 +249,23 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(17)
         self.devs_4600.setFont(font)
-        self.devs_4600.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.devs_4600.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignRight
+            | QtCore.Qt.AlignmentFlag.AlignTrailing
+            | QtCore.Qt.AlignmentFlag.AlignVCenter
+        )
         self.devs_4600.setObjectName("devs_4600")
         self.gridLayout_3.addWidget(self.devs_4600, 3, 1, 1, 1)
         self.verticalLayout_4.addLayout(self.gridLayout_3)
         self.firmware_create = QtWidgets.QPushButton(parent=self.groupBox_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Fixed)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Fixed
+        )
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.firmware_create.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.firmware_create.sizePolicy().hasHeightForWidth()
+        )
         self.firmware_create.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -234,7 +279,10 @@ class Ui_MainWindow(object):
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.MinimumExpanding, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Policy.MinimumExpanding,
+            QtWidgets.QSizePolicy.Policy.Preferred,
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.statusbar.sizePolicy().hasHeightForWidth())
@@ -255,8 +303,10 @@ class Ui_MainWindow(object):
         self.users_total.setText(_translate("MainWindow", "50"))
         self.label_2.setText(_translate("MainWindow", "З раціями"))
         self.radio_users.setText(_translate("MainWindow", "40"))
-        self.channels_create.setText(_translate("MainWindow", "Надати рації і створити канали"))
-        self.gen_diagram.setText(_translate("MainWindow", "Сгенерувати схему зв\'язку"))
+        self.channels_create.setText(
+            _translate("MainWindow", "Надати рації і створити канали")
+        )
+        self.gen_diagram.setText(_translate("MainWindow", "Сгенерувати схему зв'язку"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Канали"))
         self.label_5.setText(_translate("MainWindow", "Всього"))
         self.nets_total.setText(_translate("MainWindow", "15"))
@@ -273,3 +323,4 @@ class Ui_MainWindow(object):
         self.label_15.setText(_translate("MainWindow", "DM 4600"))
         self.devs_4600.setText(_translate("MainWindow", "2/0"))
         self.firmware_create.setText(_translate("MainWindow", "Створити прошивку"))
+

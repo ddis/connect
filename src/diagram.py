@@ -50,7 +50,7 @@ def gen_widgets_db(pidrozdily, network_design_fname, network_diagram_fname):
         #for p in range(1,100):
         #    pidrozdily = pidrozdily + [True]
     for pidrozdil in pidrozdily:
-        for r in range(2,ws_rows_count): #read from 3 (start) line 
+        for r in range(2,ws_rows_count): #read from 2 (start) line 
             #print('row ' + str(r))
             in_pidrozdil = False
             c = 1
