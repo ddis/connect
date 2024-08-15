@@ -60,21 +60,24 @@ def gen_widgets_db(pidrozdily, network_design_fname, network_diagram_fname):
             while c <= ws_cols_count: 
                 if ws.cell(row=r, column=c).value == pidrozdil and (not ws.cell(row=r, column=c+1).value or ws.cell(row=1, column=c+1).value == 'Функція'):
                     in_pidrozdil = True
-                c = c + 1
+                c += 1
                 if ws.cell(row=1, column=c).value == 'Функція':
                     break
             if not in_pidrozdil:
                 continue
-            c = c + 1
+            c += 1
             user_name = ''
             while c <= ws_cols_count:
                 #print('col ' + str(c))
                 if ws.cell(row=1, column=c).value == 'Назва':
                     user_name = ws.cell(row=r, column=c).value
                     # skip Радіостанція column
-                    c = c + 2
+                    c +=2
                     #print(user_name + ' in pidrozdil ' + pidrozdil)
                     #print(user_name + '...')
+                    continue
+                if ws.cell(row=1, column=c).value == 'Супутниковий зв’язок':
+                    c +=1
                     continue
                 if ws.cell(row=r, column=c).value:
                     net = ws.cell(row=1, column=c).value
@@ -87,12 +90,15 @@ def gen_widgets_db(pidrozdily, network_design_fname, network_diagram_fname):
                         dev['user_name'] = user_name
                     dev['net'] = net.replace('RadioNet','')
                     nets[dev['net']] = ''
-                    dev['model_name'] = ws.cell(row=r, column=8).value
+                    if c >= 12:
+                        dev['model_name'] = ws.cell(row=r, column=12).value
+                    else:
+                        dev['model_name'] = ws.cell(row=r, column=8).value
                     dev['pidrozdil'] = pidrozdil
                     p_used.add(pidrozdil)
                     devices = devices + [dev]
                     #print(len(devices))
-                c = c + 1
+                c += 1
     #print(devices)
     #print(nets)
     #exit()

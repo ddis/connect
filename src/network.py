@@ -100,8 +100,7 @@ def create_network_design(fname):
     satellite_devices = [
         "Телефон",
         "Internet",
-        "Передача данних",
-        "bla-bla"
+        "Передача данних"
     ]
 
     for i, satellite_device in enumerate(satellite_devices):
