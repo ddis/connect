@@ -24,7 +24,7 @@ def get_control(pos, direction=1, title=None, auto_id=None, control_type=None, i
 
 
 def adjust_pos_for_general_edit(pos):
-  return pos + 2
+    return pos + 2
 
 def set_general_settings():
     global cps_controls
@@ -53,9 +53,9 @@ def set_security():
     global cps_controls
     pos, w = get_control(0,title='Security')
     if not w:
-      pos, w = get_control(0,title='General')
-      w.click_input()
-      cps_controls = cps_w.descendants()
+        pos, w = get_control(0,title='General')
+        w.click_input()
+        cps_controls = cps_w.descendants()
     pos, w = get_control(pos,title='Security')
     w.click_input()
     cps_controls = cps_w.descendants()
@@ -355,7 +355,7 @@ def load_controls():
 
 def run(config_name):
     global target_settings, cps, cps_w, cps_controls
-     
+    
     target_settings = json.loads(open(config_name, encoding='utf-8').read())
     load_controls()
     

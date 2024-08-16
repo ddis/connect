@@ -257,21 +257,21 @@ class Ui_MainWindow(object):
         self.devs_4600.setObjectName("devs_4600")
         self.gridLayout_3.addWidget(self.devs_4600, 3, 1, 1, 1)
         self.verticalLayout_4.addLayout(self.gridLayout_3)
-        self.firmware_create = QtWidgets.QPushButton(parent=self.groupBox_3)
+        # self.firmware_create = QtWidgets.QPushButton(parent=self.groupBox_3)
         sizePolicy = QtWidgets.QSizePolicy(
             QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Fixed
         )
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.firmware_create.sizePolicy().hasHeightForWidth()
-        )
-        self.firmware_create.setSizePolicy(sizePolicy)
+        # sizePolicy.setHeightForWidth(
+        #     self.firmware_create.sizePolicy().hasHeightForWidth()
+        # )
+        # self.firmware_create.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.firmware_create.setFont(font)
-        self.firmware_create.setObjectName("firmware_create")
-        self.verticalLayout_4.addWidget(self.firmware_create)
+        # self.firmware_create.setFont(font)
+        # self.firmware_create.setObjectName("firmware_create")
+        # self.verticalLayout_4.addWidget(self.firmware_create)
         self.verticalLayout.addWidget(self.groupBox_3)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
@@ -322,5 +322,5 @@ class Ui_MainWindow(object):
         self.devs_4800.setText(_translate("MainWindow", "10/0"))
         self.label_15.setText(_translate("MainWindow", "DM 4600"))
         self.devs_4600.setText(_translate("MainWindow", "2/0"))
-        self.firmware_create.setText(_translate("MainWindow", "Створити прошивку"))
+        # self.firmware_create.setText(_translate("MainWindow", "Створити прошивку"))
 

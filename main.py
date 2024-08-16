@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from src.diagram import generate_diagram
-from src.firmware import generate_firmware
+# from src.firmware import generate_firmware
 from main_window import Ui_MainWindow
 from PyQt6.QtGui import QGuiApplication
 from src.context import UI
@@ -19,7 +19,7 @@ def show_main_window(ui, main_wnd, qapp):
     ui.gen_diagram.clicked.connect(generate_diagram)
     #Generate or change config for network setting (channels and keys)
     ui.channels_setup.clicked.connect(configure_nets)
-    ui.firmware_create.clicked.connect(generate_firmware)
+    # ui.firmware_create.clicked.connect(generate_firmware)
     # center, show and update main window
     main_wnd.setWindowTitle('ZSUConnect')
     screen_center = QGuiApplication.primaryScreen().availableGeometry().center()
